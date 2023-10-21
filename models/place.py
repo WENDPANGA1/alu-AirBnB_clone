@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-""" Place class """
-
+""" Place Module for HBNB project """
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """ Place class """
+    """ A place to stay """
     city_id = ""
     user_id = ""
     name = ""
@@ -17,6 +16,3 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
-
-   def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
